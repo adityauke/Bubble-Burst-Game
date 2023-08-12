@@ -13,6 +13,7 @@ function createBubble(){
 
 let timeval = 60;
 function runTimer(){
+    timeval = 60;
     let timer = setInterval( function() {
         if(timeval > 0){
             timeval--;
@@ -20,7 +21,8 @@ function runTimer(){
         }
         else{
             clearInterval(timer);
-            document.querySelector("#pbtm").innerHTML=`<h1>Game Over... Your Score is ${score}!🎯</h1>`;
+            document.querySelector("#pbtm").innerHTML=`<div class="after"> <h1>Game Over... Your Score is ${score}!🎯</h1>
+            <button id="startButton" class="game-button" onclick="startGame()">Start Game</button></div>`;
         }
         
     },1000)
@@ -47,6 +49,12 @@ document.querySelector("#pbtm").addEventListener("click" , function(dets){
     }
 });
 
+
+function startGame(){
+    createBubble();
+    runTimer();
+    getNewHit();
+}
 
 createBubble();
 runTimer();
