@@ -25,7 +25,7 @@ function runTimer(){
         else{
             gameEnd.play();
             clearInterval(timer);
-            document.querySelector("#pbtm").innerHTML=`<div class="after"> <h1>Game Over... Your Score is ${score}!🎯</h1>
+            document.querySelector("#pbtm").innerHTML=`<div class="startText"> <h1>Game Over... Your Score is ${score}!🎯</h1>
             <button id="startButton" class="game-button" onclick="startGame()">Start Game</button></div>`;
         }
         
