@@ -74,7 +74,6 @@ html , body{
 
 
 .game-button {
-    margin: 15px;
     padding: 10px 20px;
     font-size: 20px;
     border: none;
@@ -106,7 +105,7 @@ html , body{
     background-color: rgb(39, 91, 39) ;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .panel {
         width: 95%;
     }
