@@ -1,3 +1,6 @@
+var audio = new Audio("bubble.wav");
+var gameEnd = new Audio("gameEnd.mp3");
+
 function createBubble(){
     let bubble = "";
 
@@ -20,6 +23,7 @@ function runTimer(){
             document.querySelector('#timeval').textContent = timeval;
         }
         else{
+            gameEnd.play();
             clearInterval(timer);
             document.querySelector("#pbtm").innerHTML=`<div class="after"> <h1>Game Over... Your Score is ${score}!🎯</h1>
             <button id="startButton" class="game-button" onclick="startGame()">Start Game</button></div>`;
@@ -43,6 +47,7 @@ function updateScore(){
 document.querySelector("#pbtm").addEventListener("click" , function(dets){
     let currentBubble =Number(dets.target.textContent);
     if(currentBubble === hitrn){
+        audio.play();
         updateScore();
         createBubble();
         getNewHit();
@@ -56,7 +61,7 @@ function startGame(){
     getNewHit();
 }
 
-createBubble();
-runTimer();
-getNewHit();
+// createBubble();
+// runTimer();
+// getNewHit();
 
