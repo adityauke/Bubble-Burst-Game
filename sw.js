@@ -1,7 +1,7 @@
 self.addEventListener("install"  , e=>{
     e.waitUntil(
         caches.open("static").then(cache =>{
-            return cache.addAll( ["/" , "/style.css" , "/script.js" , "/assets/logo.png" , "/assets/bubble.wav" , "/assets/bubbleSoap.jpg" , "/assets/gameEnd.mp3"] )
+            return cache.addAll( ["./" , "./style.css" , "./script.js" , "./assets/logo.png" , "./assets/bubble.wav" , "./assets/bubbleSoap.jpg" , "./assets/gameEnd.mp3"] )
         })
     );
 });
