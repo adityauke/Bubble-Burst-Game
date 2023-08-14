@@ -1,5 +1,5 @@
-var audio = new Audio("./assets/bubble.wav");
-var gameEnd = new Audio("./assets/gameEnd.mp3");
+var audio = new Audio("/assets/bubble.wav");
+var gameEnd = new Audio("/assets/gameEnd.mp3");
 
 
 function createBubble(){
@@ -67,3 +67,12 @@ function startGame(){
 // runTimer();
 // getNewHit();
 
+if("serviceWorker" in navigator){
+    navigator.serviceWorker.register("sw.js").then( registration =>{
+        console.log("SW registered");
+        console.log(registration);
+    }).catch(error => {
+        console.log("Something Went Wrong :(");
+        console.log(error);
+    });
+}
