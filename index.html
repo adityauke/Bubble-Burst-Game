@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bubble Burst Game</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/free-vector/bubble-comic-bright-template-with-speech-bubbles-colorful-frames_1142-8646.jpg?w=740&t=st=1691833647~exp=1691834247~hmac=a72cd8ae5bb5513a5ec9cacaf990543364201a26dbee1265c4385af8502cbec7">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.freepik.com/free-vector/bubble-comic-bright-template-with-speech-bubbles-colorful-frames_1142-8646.jpg?w=740&t=st=1691833647~exp=1691834247~hmac=a72cd8ae5bb5513a5ec9cacaf990543364201a26dbee1265c4385af8502cbec7"
+    />
+  </head>
+  <body>
     <!-- <div class="gname"><h1>Bubble Burst Game</h1></div> -->
     <div class="main">
-        <!-- <p class="hscore">Your High Score is🎯: </p> -->
-        <div class="panel">
-            <div class="ptop">
-                <div class="elem">
-                    <h2>Hit</h2>
-                    <div id="hitval" class="box">1</div>
-                </div>
-                <div class="elem">
-                    <h2>Time</h2>
-                    <div id="timeval" class="box">60</div>
-                </div>
-                <div class="elem">
-                    <h2>Score</h2>
-                    <div id="scoreval" class="box">0</div>
-                </div>
-            </div>
-            <div id="pbtm" class="pbtm">
-                <div class="startText">
-                    <h1>Bubble Burst Game🎮</h1>
-                    <button id="startButton" class="game-button" onclick="startGame()">Start Game</button>
-                </div>
-                
-            </div>
+      <!-- <p class="hscore">Your High Score is🎯: </p> -->
+      <div class="panel">
+        
+        <div class="ptop">
+          <div class="elem">
+            <h2>Hit</h2>
+            <div id="hitval" class="box">1</div>
+          </div>
+
+          <div class="elem">
+            <h2>Time</h2>
+            <div id="timeval" class="box">60</div>
+          </div>
+
+          <div class="elem">
+            <h2>Score</h2>
+            <div id="scoreval" class="box">0</div>
+          </div>
+          
         </div>
+
+        <div id="pbtm" class="pbtm">
+          <div class="startText">
+            <h1>Bubble Burst Game🎮</h1>
+            <button id="startButton" class="game-button" onclick="startGame()">
+              Start Game
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="caption">Developed by <a href="https://www.linkedin.com/in/adityauke/">@adityauke</a></div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
