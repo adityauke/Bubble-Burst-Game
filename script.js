@@ -1,5 +1,6 @@
-var audio = new Audio("bubble.wav");
-var gameEnd = new Audio("gameEnd.mp3");
+var audio = new Audio("/assets/bubble.wav");
+var gameEnd = new Audio("/assets/gameEnd.mp3");
+
 
 function createBubble(){
     let bubble = "";
@@ -56,6 +57,7 @@ document.querySelector("#pbtm").addEventListener("click" , function(dets){
 
 
 function startGame(){
+    document.querySelector(".panel").style.backgroundImage = "none"; 
     createBubble();
     runTimer();
     getNewHit();
