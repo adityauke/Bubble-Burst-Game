@@ -1,5 +1,5 @@
-var audio = new Audio("/assets/bubble.wav");
-var gameEnd = new Audio("/assets/gameEnd.mp3");
+var audio = new Audio("./assets/bubble.wav");
+var gameEnd = new Audio("./assets/gameEnd.mp3");
 
 
 function createBubble(){
