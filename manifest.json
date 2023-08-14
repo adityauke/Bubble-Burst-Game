@@ -1,0 +1,22 @@
+{
+    "name": "Bubble Burst Game",
+    "short_name": "Bubble Burst",
+    "start_url": "./index.html",
+    "background_color": "#519766",
+    "theme_color": "#0E4C37",
+    "display": "standalone",
+    "splash_pages": null, 
+    "icons": [
+        {
+            "src": "assets/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+        
+    ]
+}
